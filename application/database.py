@@ -12,9 +12,11 @@ class Base(DeclarativeBase):
     id = Column(Integer, primary_key=True, index=True,  autoincrement=True)
 
 
+
 class SpecialityForStudent(Base):
     __tablename__ = "specialities"
     name_speciality = Column(String)
+
 
 
 class Enterprise(Base):  # Предприятие
